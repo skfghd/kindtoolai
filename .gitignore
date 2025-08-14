@@ -1,27 +1,6 @@
-# [dependencies]
-node_modules/
-.pnpm-store/
-.yarn/
-package-lock.json
-yarn.lock
-
-# [build output]
-dist/
-build/
-.out/
-.next/
-.cache/
-.vercel/
-.tmp/
-
-# [env & secrets]
-.env
-.env.*
-*.local
-serviceAccount*.json
-firebase-debug.log
-
-# [IDE, OS, logs]
+node_modules
+dist
 .DS_Store
-*.log
-.vscode/
+server/public
+vite.config.ts.*
+*.tar.gz
