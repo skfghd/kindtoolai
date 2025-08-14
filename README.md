@@ -3,17 +3,18 @@
 A collection of warm, helpful, and creative AI tools designed to support communication, self-reflection, and collaboration.
 
 ## 프로젝트 구성
-- **테토 vs 에겐**: 이미지 기반 성향 분석
-- **삼행시 생성기**: 감성 삼행시 생성
-- **회의 소통 스타일 분석**: 회의 대화문을 분석해 성향 파악
-- **KindWhisper**: 따뜻한 번역기
-- **만다라트 캔버스**: 목표 설정 도구
-- **기타 실험용 앱들**
+- `teto-vs-egen`: 이미지 기반 성향 분석
+- `threelinepoem`: 삼행시 생성기
+- `mandalat-canvas`: 목표 설정 도구
+- `catch-up-meeting`: 회의 분석 도구
+- `KindWhisper`: 다정한 번역기
+- `whattheymeant`: 속뜻 번역기
+- `feeltoon`: 감정 그림책 생성기
 
 ## 개발 환경
 - Replit + Firebase Hosting
-- React, Vite 기반
-- 일부 앱은 Gemini / GPT API 연동 예정
+- React, Vite 기반 일부 있음
+- 일부 앱은 GPT / Gemini API 연동 예정
 
 ---
 
