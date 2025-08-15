@@ -1,21 +1,43 @@
-# KindToolAI
+# KINDTOOLAI - Firebase 완전 배포 패키지
 
-A collection of warm, helpful, and creative AI tools designed to support communication, self-reflection, and collaboration.
+이 패키지는 `firebase deploy` 명령 하나로 즉시 프로덕션 배포가 가능하도록 모든 설정이 완료되어 있습니다.
 
-## 프로젝트 구성
-- `teto-vs-egen`: 이미지 기반 성향 분석
-- `threelinepoem`: 삼행시 생성기
-- `mandalat-canvas`: 목표 설정 도구
-- `catch-up-meeting`: 회의 분석 도구
-- `KindWhisper`: 다정한 번역기
-- `whattheymeant`: 속뜻 번역기
-- `feeltoon`: 감정 그림책 생성기
+## 🚀 빠른 시작
 
-## 개발 환경
-- Replit + Firebase Hosting
-- React, Vite 기반 일부 있음
-- 일부 앱은 GPT / Gemini API 연동 예정
+```bash
+# 1. 의존성 설치
+npm install
 
----
+# 2. Firebase CLI 설치 (전역)
+npm install -g firebase-tools
 
-© 2025 KindToolAI
+# 3. Firebase 로그인
+firebase login
+
+# 4. Firebase 프로젝트 생성 및 .firebaserc 파일 수정
+
+# 5. 자동 배포 스크립트 실행
+./deploy.sh
+```
+
+## 📖 상세 가이드
+
+- `README-Firebase.md` - 전체 기능 및 설정 가이드
+- `firebase-deploy-guide.md` - 단계별 배포 가이드
+
+## ✨ 주요 기능
+
+- ✅ Firebase Hosting + Functions + Firestore 완전 설정
+- ✅ 방문자 추적 및 통계 시스템
+- ✅ 관리자 대시보드 (패스워드: new1234!)
+- ✅ Google AdSense 수익화 준비 완료
+- ✅ SEO 최적화 및 공통 헤더 시스템
+- ✅ 원클릭 배포 스크립트
+
+## 🔥 즉시 배포 명령어
+
+```bash
+npm run firebase:deploy
+```
+
+모든 설정이 완료된 완전한 배포 패키지입니다!

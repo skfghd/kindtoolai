@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINDTOOL.AI 공통 헤더 삽입 가이드</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .code-block {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #8B4513;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ffeaa7;
+            margin: 15px 0;
+        }
+        .warning {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #f5c6cb;
+            margin: 15px 0;
+            color: #721c24;
+        }
+        h1 { color: #8B4513; }
+        h2 { color: #654321; border-bottom: 2px solid #e2d5c7; padding-bottom: 10px; }
+        code { background: #f8f9fa; padding: 2px 6px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>🚀 KINDTOOL.AI 공통 헤더 삽입 가이드</h1>
+    
+    <div class="highlight">
+        <strong>📋 목적:</strong> 모든 외부 도구 앱들의 최상단에 통일된 KINDTOOL.AI 메뉴바를 추가하여 사용자 경험을 개선합니다.
+    </div>
+
+    <h2>1. 📁 스크립트 파일 위치</h2>
+    <p>공통 헤더 스크립트는 다음 URL에서 사용할 수 있습니다:</p>
+    <div class="code-block">
+        <strong>스크립트 URL:</strong><br>
+        https://kindtool.ai/kindtool-header.js
+    </div>
+
+    <h2>2. 🔧 각 외부 앱에 추가하는 방법</h2>
+    
+    <h3>방법 1: HTML에 직접 추가 (권장)</h3>
+    <p>각 외부 앱의 <code>&lt;head&gt;</code> 태그 또는 <code>&lt;body&gt;</code> 태그 맨 마지막에 다음 코드를 추가하세요:</p>
+    <div class="code-block">
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h3>방법 2: JavaScript로 동적 로딩</h3>
+    <p>기존 JavaScript 코드에서 동적으로 로드하려면:</p>
+    <div class="code-block">
+const script = document.createElement('script');
+script.src = 'https://kindtool.ai/kindtool-header.js';
+script.async = true;
+document.head.appendChild(script);
+    </div>
+
+    <h2>3. 📝 각 앱별 구체적인 적용 방법</h2>
+    
+    <h3>1. 테토vs에겐 성향분석 (teto-vs-egen-hongeunlee.replit.app)</h3>
+    <div class="code-block">
+HTML 파일의 &lt;head&gt; 섹션에 추가:
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h3>2. 삼행시 만들기 (threelinepoem.replit.app)</h3>
+    <div class="code-block">
+HTML 파일의 &lt;body&gt; 태그 직후에 추가:
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h3>3. 만다라트 캔버스 (mandalat-canvas.replit.app)</h3>
+    <div class="code-block">
+index.html 또는 main HTML 파일에 추가:
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h3>4. 캐치업 미팅 MBTI (catch-up-meeting-hongeunlee.replit.app)</h3>
+    <div class="code-block">
+메인 HTML 파일의 &lt;head&gt; 또는 &lt;body&gt; 끝부분에 추가:
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h3>5. 속뜻 번역기 (WhatTheyMeant.replit.app)</h3>
+    <div class="code-block">
+HTML 파일에 추가:
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h3>6. Tales of Me (feeltoon.replit.app)</h3>
+    <div class="code-block">
+메인 페이지 HTML에 추가:
+&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;
+    </div>
+
+    <h2>4. 🎯 각 앱별 적용 대상</h2>
+    <ul>
+        <li><strong>테토vs에겐 성향분석:</strong> https://teto-vs-egen-hongeunlee.replit.app</li>
+        <li><strong>삼행시 만들기:</strong> https://threelinepoem.replit.app</li>
+        <li><strong>만다라트 캔버스:</strong> https://mandalat-canvas.replit.app</li>
+        <li><strong>캐치업 미팅 MBTI:</strong> https://catch-up-meeting-hongeunlee.replit.app</li>
+        <li><strong>속뜻 번역기:</strong> https://WhatTheyMeant.replit.app</li>
+        <li><strong>Tales of Me:</strong> https://feeltoon.replit.app</li>
+    </ul>
+
+    <h2>5. ✨ 제공되는 기능</h2>
+    <ul>
+        <li>🏠 홈으로 돌아가기 링크</li>
+        <li>ℹ️ 사이트 소개 페이지 링크</li>
+        <li>⚡ 모든 도구들에 대한 드롭다운 메뉴</li>
+        <li>💬 Q&A 페이지 링크</li>
+        <li>📱 모바일 반응형 디자인</li>
+        <li>📊 구글 애널리틱스 이벤트 추적</li>
+    </ul>
+
+    <h2>6. 🎨 디자인 특징</h2>
+    <ul>
+        <li><strong>비침입적:</strong> 기존 앱 디자인에 영향을 주지 않음</li>
+        <li><strong>고정 위치:</strong> 페이지 최상단에 고정된 헤더</li>
+        <li><strong>반투명 배경:</strong> 기존 콘텐츠와 자연스럽게 조화</li>
+        <li><strong>자동 여백:</strong> 기존 콘텐츠를 64px 아래로 자동 이동</li>
+        <li><strong>Z-index 최고값:</strong> 다른 요소들 위에 항상 표시</li>
+    </ul>
+
+    <div class="warning">
+        <strong>⚠️ 주의사항:</strong>
+        <ul>
+            <li>스크립트는 중복 로드를 방지하는 로직이 포함되어 있습니다</li>
+            <li>기존 페이지의 CSS와 충돌하지 않도록 네임스페이스를 사용합니다</li>
+            <li>모든 스타일은 <code>!important</code> 규칙으로 보호됩니다</li>
+        </ul>
+    </div>
+
+    <h2>7. 🧪 테스트 방법</h2>
+    <ol>
+        <li>각 앱에 스크립트를 추가합니다</li>
+        <li>페이지를 새로고침합니다</li>
+        <li>상단에 KINDTOOL.AI 헤더가 나타나는지 확인합니다</li>
+        <li>모든 링크가 올바르게 작동하는지 테스트합니다</li>
+        <li>모바일에서도 정상 작동하는지 확인합니다</li>
+    </ol>
+
+    <h2>8. 🔄 업데이트 방법</h2>
+    <p>헤더 디자인이나 기능을 수정해야 할 경우:</p>
+    <ol>
+        <li><code>kindtool-header.js</code> 파일을 수정합니다</li>
+        <li>모든 외부 앱에서 자동으로 업데이트된 헤더를 사용하게 됩니다</li>
+        <li>브라우저 캐시 때문에 즉시 반영되지 않을 수 있으니 강제 새로고침하세요</li>
+    </ol>
+
+    <div class="highlight">
+        <strong>💡 팁:</strong> 각 앱의 개발자 도구(F12)에서 콘솔을 확인하여 스크립트가 정상적으로 로드되었는지 확인할 수 있습니다.
+    </div>
+
+    <hr style="margin: 40px 0; border: none; border-top: 2px solid #e2d5c7;">
+    <p style="text-align: center; color: #666;">
+        <strong>KINDTOOL.AI</strong> | 재미있고 유용한 아이스브레이킹 도구들
+    </p>
+</body>
+</html>

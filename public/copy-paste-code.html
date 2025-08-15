@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복사해서 붙여넣기 - KINDTOOL.AI 헤더</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .code-box {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            position: relative;
+            overflow-x: auto;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+        .copy-btn:hover {
+            background: #3182ce;
+        }
+        .copy-btn.copied {
+            background: #38a169;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .app-section {
+            border: 2px solid #e2d5c7;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            background: #fefefe;
+        }
+        .app-title {
+            color: #8B4513;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .url {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        h1 { 
+            color: #8B4513; 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #f39c12;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 KINDTOOL.AI 헤더 - 복사 & 붙여넣기</h1>
+        <p class="subtitle">각 앱에 아래 코드를 복사해서 붙여넣기만 하면 됩니다!</p>
+        
+        <div class="highlight">
+            <h2 style="margin-top: 0;">🚀 단 한 줄로 완성!</h2>
+            <p>아래 코드를 복사해서 각 외부 앱의 HTML 파일에 붙여넣으면 자동으로 KINDTOOL.AI 헤더가 추가됩니다.</p>
+        </div>
+
+        <div class="success">
+            <strong>✅ 이 코드의 장점:</strong>
+            <ul>
+                <li>기존 디자인을 전혀 건드리지 않음</li>
+                <li>모바일에서도 자동으로 반응형 동작</li>
+                <li>구글 애널리틱스 추적 자동 포함</li>
+                <li>중복 설치 방지 기능 내장</li>
+            </ul>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">🔗 공통 코드 (모든 앱에 동일하게 사용)</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'common-code')">복사</button>
+                <div id="common-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+            <p><strong>추가 위치:</strong> HTML 파일의 &lt;head&gt; 태그 안이나 &lt;body&gt; 태그 끝부분</p>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #e2d5c7;">
+
+        <div class="app-section">
+            <div class="app-title">👥 1. 테토vs에겐 성향분석</div>
+            <div class="url">https://teto-vs-egen-hongeunlee.replit.app</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'teto-code')">복사</button>
+                <div id="teto-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">✏️ 2. 삼행시 만들기</div>
+            <div class="url">https://threelinepoem.replit.app</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'poem-code')">복사</button>
+                <div id="poem-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">⚏ 3. 만다라트 캔버스</div>
+            <div class="url">https://mandalat-canvas.replit.app</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'mandala-code')">복사</button>
+                <div id="mandala-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">📹 4. 캐치업 미팅 MBTI</div>
+            <div class="url">https://catch-up-meeting-hongeunlee.replit.app</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'catchup-code')">복사</button>
+                <div id="catchup-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">🎨 5. 속뜻 번역기</div>
+            <div class="url">https://WhatTheyMeant.replit.app</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'translator-code')">복사</button>
+                <div id="translator-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">📖 6. Tales of Me</div>
+            <div class="url">https://feeltoon.replit.app</div>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this, 'tales-code')">복사</button>
+                <div id="tales-code">&lt;script src="https://kindtool.ai/kindtool-header.js" async&gt;&lt;/script&gt;</div>
+            </div>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ 중요한 안내:</strong>
+            <ul>
+                <li>각 앱의 개발자가 직접 위 코드를 해당 앱의 HTML 파일에 추가해야 합니다</li>
+                <li>코드를 추가한 후 페이지를 새로고침하면 상단에 KINDTOOL.AI 헤더가 나타납니다</li>
+                <li>헤더는 기존 디자인에 전혀 영향을 주지 않으며, 페이지 맨 위에만 추가됩니다</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="/header-demo" style="display: inline-block; background: #8B4513; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; margin: 5px;">🎯 데모 보기</a>
+            <a href="/embed-guide" style="display: inline-block; background: #654321; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; margin: 5px;">📖 상세 가이드</a>
+            <a href="/" style="display: inline-block; background: #4a5568; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; margin: 5px;">🏠 메인으로</a>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(button, elementId) {
+            const code = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const originalText = button.textContent;
+                button.textContent = '복사됨!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(() => {
+                // 클립보드 API가 실패한 경우 텍스트 선택
+                const range = document.createRange();
+                range.selectNode(document.getElementById(elementId));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+                alert('코드가 선택되었습니다. Ctrl+C로 복사하세요.');
+            });
+        }
+    </script>
+</body>
+</html>
