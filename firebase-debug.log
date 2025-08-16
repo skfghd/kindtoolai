@@ -1,0 +1,34 @@
+[debug] [2025-08-16T14:55:55.256Z] ----------------------------------------------------------------------
+[debug] [2025-08-16T14:55:55.259Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KTDS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-08-16T14:55:55.260Z] CLI Version:   14.12.1
+[debug] [2025-08-16T14:55:55.260Z] Platform:      win32
+[debug] [2025-08-16T14:55:55.260Z] Node Version:  v20.19.4
+[debug] [2025-08-16T14:55:55.260Z] Time:          Sat Aug 16 2025 23:55:55 GMT+0900 (대한민국 표준시)
+[debug] [2025-08-16T14:55:55.260Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-16T14:55:55.498Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-16T14:55:55.498Z] > authorizing via signed-in user (hongeun.lee@kt.com)
+[debug] [2025-08-16T14:55:55.498Z] [iam] checking project kindtoolai for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-16T14:55:55.500Z] Checked if tokens are valid: true, expires at: 1755357917935
+[debug] [2025-08-16T14:55:55.500Z] Checked if tokens are valid: true, expires at: 1755357917935
+[debug] [2025-08-16T14:55:55.501Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kindtoolai:testIamPermissions [none]
+[debug] [2025-08-16T14:55:55.502Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kindtoolai:testIamPermissions x-goog-quota-user=projects/kindtoolai
+[debug] [2025-08-16T14:55:55.502Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kindtoolai:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-16T14:55:55.812Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kindtoolai:testIamPermissions 200
+[debug] [2025-08-16T14:55:55.813Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kindtoolai:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-16T14:55:55.813Z] Checked if tokens are valid: true, expires at: 1755357917935
+[debug] [2025-08-16T14:55:55.813Z] Checked if tokens are valid: true, expires at: 1755357917935
+[debug] [2025-08-16T14:55:55.813Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/kindtoolai/serviceAccounts/kindtoolai@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-08-16T14:55:55.813Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/kindtoolai/serviceAccounts/kindtoolai@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-08-16T14:55:56.926Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/kindtoolai/serviceAccounts/kindtoolai@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-08-16T14:55:56.926Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/kindtoolai/serviceAccounts/kindtoolai@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-08-16T14:55:56.928Z] Checked if tokens are valid: true, expires at: 1755357917935
+[debug] [2025-08-16T14:55:56.929Z] Checked if tokens are valid: true, expires at: 1755357917935
+[debug] [2025-08-16T14:55:56.930Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kindtoolai [none]
+[debug] [2025-08-16T14:55:57.405Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kindtoolai 200
+[debug] [2025-08-16T14:55:57.405Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kindtoolai {"projectId":"kindtoolai","projectNumber":"510127054284","displayName":"kindtoolai","name":"projects/kindtoolai","resources":{"hostingSite":"kindtoolai"},"state":"ACTIVE","etag":"1_1169e684-9e73-47be-9ef6-772712a40715"}
+[info] 
+[info] === Deploying to 'kindtoolai'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[info] Running command: npm install
