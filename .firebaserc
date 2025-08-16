@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "kindtoolai-firebase"
-  }
+    "default": "kindtoolai"
+  },
+  "targets": {},
+  "etags": {}
 }
